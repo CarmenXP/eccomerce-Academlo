@@ -47,37 +47,127 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-color);
 }
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    color:var(--title-color);
+}
+
+.introduction{
+ background-color: antiquewhite;
+ width: 45%;
+ position: relative;
+ top: 7rem;
+ left: 5rem;
+}
+.introduction>h1{
+    font-size:xx-large;
+    padding: .1rem;
+}
+.price{
+    font-size: larger;
+    color: crimson;
+}
+.introduction > p{
+    font-size: .9rem;
+    padding: .5rem;
+}
+button {
+    background-color: rgb(184, 168, 168);
+    border: none;
+    color: rgb(27, 26, 26);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+
 nav{
     background-color: blanchedalmond;
     display: flex;
+    align-items: center;
 }
 nav>img{
-    height: 60px;
-    width: 60px;
+    margin-left: 3.5rem;
+    height: 65px;
+    width: 65px;
 }
 ul{
     width: 50%;
+    font-size:large;
+    padding: 0;
+    background-color: aquamarine;
+
 }
 ul>a{
     text-decoration: none;
+    margin: 0 .8rem;
+    
+    
 }
+
+
 li{
     display: inline;
+    color:var(--title-color);
 }
 .icons-nav{
-    width: 25%;
+    position: relative;
+    width: 35%;
     background-color: aqua;
     text-align: right;
+    z-index: 1;
+   
     
     
+}
+.icons-nav >img{
+    height: 1.5rem;
+    margin-right: 1.2rem;
+    
+}
+.icons-nav >  span{
+    font-size: x-small;
+    background-color: rgb(77, 70, 70);
+    padding: .3rem .5rem;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: .75rem;
+    top:.55rem;
+}
+.image{
+    display: flex;
+    position: absolute;
+   width: 30%;
+   height: 87%;
+   right: 4rem;
+   align-self:stretch;
+  
+    
+    
+}
+
+.image > img{
+    background-color: rgb(224, 56, 90);
+   width: 100%;
+   
+   padding-top: 4.5rem;
+   
 }
 .sub-menu{
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
 }
 .conten-submenu{
     padding-right: 1rem;
@@ -148,3 +238,39 @@ footer{
 .social-icons>i{
     padding-right: .25rem ;
 }
+.shopping-cart{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35%;
+    background-color: rgb(233, 212, 184);
+    
+}
+.products-list{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding-top: 5rem;
+
+}
+.products-list>i{
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+}
+.empty-state{
+    padding: top 5rem;;
+}
+.empty-state>h5{
+    padding-bottom: 1rem;
+}
+.empty-state>img{
+    width: 55%;
+    height: 55%;
+}
+.empty-state p {
+    font-size: small;
+    
+}
+
