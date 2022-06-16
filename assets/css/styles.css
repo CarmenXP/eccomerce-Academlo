@@ -59,7 +59,6 @@ header{
 }
 
 .introduction{
- background-color: antiquewhite;
  width: 45%;
  position: relative;
  top: 7rem;
@@ -91,7 +90,6 @@ button {
   }
 
 nav{
-    background-color: blanchedalmond;
     display: flex;
     align-items: center;
 }
@@ -104,8 +102,6 @@ ul{
     width: 50%;
     font-size:large;
     padding: 0;
-    background-color: aquamarine;
-
 }
 ul>a{
     text-decoration: none;
@@ -120,28 +116,28 @@ li{
     color:var(--title-color);
 }
 .icons-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: relative;
     width: 35%;
-    background-color: aqua;
     text-align: right;
     z-index: 1;
-   
-    
-    
+       
 }
-.icons-nav >img{
+.icons-nav >img, .count>img{
     height: 1.5rem;
     margin-right: 1.2rem;
     
 }
-.icons-nav >  span{
+.count >  span{
     font-size: x-small;
     background-color: rgb(77, 70, 70);
     padding: .3rem .5rem;
     border-radius: 50%;
     color: #fff;
     position: absolute;
-    right: .75rem;
+    right: 1.5rem;
     top:.55rem;
 }
 .image{
